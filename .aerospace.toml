@@ -1,0 +1,145 @@
+# ============================================
+# AeroSpace config                          
+# Hyper key: Ctrl + Alt + Cmd                
+# Extra modifier: Shift                     
+# ============================================
+
+config-version = 2
+
+
+# ============================================
+# General behavior
+# ============================================
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# New workspaces start tiled.
+default-root-container-layout = 'tiles'
+# Let AeroSpace decide horizontal vs vertical automatically.
+default-root-container-orientation = 'auto'
+
+
+# ============================================
+# Startup hooks
+# ============================================
+# Runs once after login. Uses JankyBorders to highlight the focused window.
+after-startup-command = [
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+]
+
+
+# ============================================
+# Persistent workspaces
+# ============================================
+# Keep these workspaces alive even when they are empty.
+persistent-workspaces = ["1", "2", "3", "4", "5"]
+
+
+# ============================================
+# Optional / experimental settings
+# ============================================
+# Uncomment these once you want to test them.
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+# automatically-unhide-macos-hidden-apps = false
+
+
+[mode.main.binding]
+
+# ============================================
+# Focus navigation
+# ============================================
+# Move keyboard focus between windows.
+alt-ctrl-cmd-h = 'focus left'
+alt-ctrl-cmd-j = 'focus down'
+alt-ctrl-cmd-k = 'focus up'
+alt-ctrl-cmd-l = 'focus right'
+
+
+# ============================================
+# Move windows
+# ============================================
+# Move the focused window in the given direction.
+shift-cmd-h = 'move left'
+shift-cmd-j = 'move down'
+shift-cmd-k = 'move up'
+shift-cmd-l = 'move right'
+
+
+# ============================================
+# Resize windows
+# ============================================
+# Example bindings you can enable later if needed.
+# alt-ctrl-left = 'resize smart -50'
+# alt-ctrl-right = 'resize smart +50'
+
+
+# ============================================
+# Create nested layouts
+# ============================================
+# Join the focused window with a neighbor to build more complex layouts.
+# Arrow keys are easier on a German keyboard layout.
+shift-cmd-left = 'join-with left'
+shift-cmd-down = 'join-with down'
+shift-cmd-up = 'join-with up'
+shift-cmd-right = 'join-with right'
+
+
+# ============================================
+# Tree cleanup / balancing
+# ============================================
+# Flatten removes unnecessary nesting.
+alt-ctrl-cmd-backspace = 'flatten-workspace-tree'
+# Balance evens out split sizes across the current container.
+alt-ctrl-cmd-b = 'balance-sizes'
+
+
+# ============================================
+# Layout controls
+# ============================================
+# Cycle through tiled layout variants.
+alt-ctrl-cmd-t = 'layout tiles horizontal vertical'
+# Switch the current container to accordion layout.
+alt-ctrl-cmd-a = 'layout accordion vertical'
+# Toggle macOS fullscreen.
+alt-ctrl-shift-cmd-f = 'fullscreen'
+# Toggle the focused window between floating and tiling.
+alt-ctrl-cmd-f = 'layout floating tiling'
+
+
+# ============================================
+# Window / config actions
+# ============================================
+alt-ctrl-cmd-q = 'close'
+alt-ctrl-cmd-r = 'reload-config'
+
+
+# ============================================
+# Workspace switching
+# ============================================
+# Focus workspace
+alt-ctrl-cmd-1 = 'workspace 1'
+alt-ctrl-cmd-2 = 'workspace 2'
+alt-ctrl-cmd-3 = 'workspace 3'
+alt-ctrl-cmd-4 = 'workspace 4'
+alt-ctrl-cmd-5 = 'workspace 5'
+
+# Move focused window to workspace
+alt-ctrl-cmd-shift-1 = 'move-node-to-workspace 1'
+alt-ctrl-cmd-shift-2 = 'move-node-to-workspace 2'
+alt-ctrl-cmd-shift-3 = 'move-node-to-workspace 3'
+
+
+# ============================================
+# Multi-monitor workspace handling
+# ============================================
+# Send the currently focused workspace to the next monitor.
+alt-ctrl-cmd-tab = 'move-workspace-to-monitor --wrap-around next'
+
+# Bring a workspace to the currently focused monitor.
+# Uncomment if you want fast "summon" shortcuts.
+# alt-cmd-1 = 'summon-workspace 1'
+# alt-cmd-2 = 'summon-workspace 2'
+# alt-cmd-3 = 'summon-workspace 3'
+# alt-cmd-4 = 'summon-workspace 4'
+# alt-cmd-5 = 'summon-workspace 5'
