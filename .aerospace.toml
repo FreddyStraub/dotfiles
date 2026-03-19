@@ -33,8 +33,7 @@ after-startup-command = [
 # Persistent workspaces
 # ============================================
 # Keep these workspaces alive even when they are empty.
-persistent-workspaces = []
-
+persistent-workspaces = ["1", "2", "3"]
 
 # ============================================
 # Optional / experimental settings
@@ -133,6 +132,11 @@ alt-ctrl-cmd-shift-4 = 'move-node-to-workspace 4'
 alt-ctrl-cmd-shift-5 = 'move-node-to-workspace 5'
 alt-ctrl-cmd-shift-6 = 'move-node-to-workspace 6'
 
+[workspace-to-monitor-force-assignment]
+
+1 = 'main'
+2 = 'secondary'
+3 = 3
 
 # ============================================
 # Multi-monitor workspace handling
