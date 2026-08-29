@@ -69,8 +69,8 @@ shift-cmd-l = 'move right'
 # Resize windows
 # ============================================
 # Example bindings you can enable later if needed.
-# alt-ctrl-left = 'resize smart -50'
-# alt-ctrl-right = 'resize smart +50'
+alt-ctrl-cmd-left = 'resize smart -50'
+alt-ctrl-cmd-right = 'resize smart +50'
 
 
 # ============================================
