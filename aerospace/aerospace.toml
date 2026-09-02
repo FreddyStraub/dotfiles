@@ -19,7 +19,6 @@ default-root-container-layout = 'tiles'
 # Let AeroSpace decide horizontal vs vertical automatically.
 default-root-container-orientation = 'auto'
 
-
 # ============================================
 # Startup hooks
 # ============================================
@@ -157,3 +156,10 @@ alt-ctrl-cmd-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # 3 = Third monitor if present, otherwise secondary
 3 = ['^2$', 'secondary']
+
+[gaps]
+outer.left = 16 
+outer.bottom = 16 
+outer.top = 8
+outer.right = 16
+inner.horizontal = 12
