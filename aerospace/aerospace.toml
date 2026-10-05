@@ -122,6 +122,7 @@ alt-ctrl-cmd-3 = 'workspace 3'
 alt-ctrl-cmd-4 = 'workspace 4'
 alt-ctrl-cmd-5 = 'workspace 5'
 alt-ctrl-cmd-6 = 'workspace 6'
+alt-ctrl-cmd-space = 'workspace Agent'
 
 # Move focused window to workspace
 alt-ctrl-cmd-shift-1 = 'move-node-to-workspace 1'
@@ -130,6 +131,7 @@ alt-ctrl-cmd-shift-3 = 'move-node-to-workspace 3'
 alt-ctrl-cmd-shift-4 = 'move-node-to-workspace 4'
 alt-ctrl-cmd-shift-5 = 'move-node-to-workspace 5'
 alt-ctrl-cmd-shift-6 = 'move-node-to-workspace 6'
+alt-ctrl-cmd-shift-space = 'move-node-to-workspace Agent'
 
 # ============================================
 # Multi-monitor workspace handling
